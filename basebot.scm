@@ -37,10 +37,7 @@
 ;; u = 1/2* at^2 + ut + u
 (define position
   (lambda (a v u t)
-    (+
-     (*(*(square t)a)0.5)
-     (* v t)
-     u)))
+    (+ (* 0.5 a (square t)) (* v t) u)))
 
 ;; you need to complete this procedure, then show some test cases
 
